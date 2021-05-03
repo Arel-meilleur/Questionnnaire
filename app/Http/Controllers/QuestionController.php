@@ -37,11 +37,11 @@ class QuestionController extends Controller
             "Expires"             => "0"
         );
 
-        $columns = array('question1          ', 'question2          ', 'question3', 'question4', 'question5','question6','question7','question8','question9','question10','question11','question12'
-        ,'question13','question14','question15','question16','question17','question18','question19','question20','question21','question22','question23','question24','question25'
-        ,'question26','question27','question18','question29','question30','question31','question32','question33','question34','question35','question36'
-        ,'question37','question38','question39','question40','question41','question42','question44','question45','question46','question47','question48','question49'
-        ,'question50','question51','question52','question53','question54','question55','question56','question57','question58','question59','question60','question61','question62','question63'
+        $columns = array('question1          ', 'question2          ', 'question3          ', 'question4          ', 'question5          ','question6          ','question7          ','question8          ','question9          ','question10          ','question11          ','question12          '
+        ,'question13          ','question14          ','question15          ','question16          ','question17          ','question18          ','question19          ','question20          ','question21          ','question22          ','question23          ','question24          ','question25          '
+        ,'question26          ','question27          ','question18          ','question29          ','question30          ','question31          ','question32          ','question33          ','question34          ','question35          ','question36          '
+        ,'question37          ','question38          ','question39          ','question40          ','question41          ','question42          ','question44          ','question45          ','question46          ','question47          ','question48          ','question49          '
+        ,'question50          ','question51          ','question52          ','question53          ','question54          ','question55          ','question56          ','question57          ','question58          ','question59          ','question60          ','question61          ','question62          ','question63          '
     );
 
         $callback = function() use($data, $columns) {
@@ -116,14 +116,14 @@ class QuestionController extends Controller
 
                 fputcsv($file, array($row['question1'], $row['question2'], $row['question3'], $row['question4'], $row['question5'],$row['question6'],$row['question7'],$row['question8'],$row['question9']
                 ,$row['question10'],$row['question11'],$row['question12'],
-                // $row['question13'],$row['question14'],$row['question15'],$row['question16'],$row['question17'],$row['question18'],$row['question19'],
-                // $row['question20'],$row['question21'],$row['question22'],$row['question23'],$row['question24'],$row['question25'],$row['question26'],$row['question27'],$row['question28'],
+                $row['question13'],$row['question14'],$row['question15'],$row['question16'],$row['question17'],$row['question18'],$row['question19'],
+                // $row['question20'],$row['question21'],$row['question22'],$row['question23'],$row['question24'], $row['question25'],$row['question26'],$row['question27'],$row['question28'],
                 // $row['question29'],$row['question30'],$row['question31'],$row['question32'],$row['question33'],$row['question34'],
-                // $row['question35'],$row['question36'],$row['question37'],$row['question38'],$row['question39'],
-                // $row['question40'],$row['question41'],$row['question42'],$row['question44'],$row['question45'],$row['question46'],
-                // $row['question47'],$row['question48'],$row['question49'],$row['question50'],$row['question51'],$row['question52'],
-                // $row['question53'],$row['question54'],$row['question55'],$row['question56'],$row['question57'],$row['question58'],
-                // $row['question59'],$row['question60'],$row['question61'],$row['question62'],$row['question63'],$row['question64'],
+                $row['question35'],$row['question36'],$row['question37'],$row['question38'],$row['question39'],
+                $row['question40'],$row['question41'],$row['question42'],$row['question44'],$row['question45'],$row['question46'],
+                $row['question47'],$row['question48'],$row['question49'],$row['question50'],$row['question51'],$row['question52'],
+                $row['question53'],$row['question54'],$row['question55'],$row['question56'],$row['question57'],$row['question58'],
+                $row['question59'],$row['question60'],$row['question61'],$row['question62'],$row['question63'],$row['question64']
             ));
             }
 
