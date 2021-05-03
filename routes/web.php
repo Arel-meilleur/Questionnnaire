@@ -24,4 +24,4 @@ Route::post('/submit', 'QuestionController@store');
 Route::get('/dashborad', 'QuestionController@admin');
 Route::get('/export', 'QuestionController@exportCsv');
 
-// Route::get('export', 'DemoController@export')->name('export');
+Route::get('export', 'QuestionController@export')->name('export');

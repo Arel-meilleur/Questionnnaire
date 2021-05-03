@@ -267,7 +267,10 @@
                     </div><!-- .animated -->
                 </div><!-- .content -->
 
-                <span data-href="/export" id="export" class="btn btn-success btn-sm" onclick="exportTasks(event.target);">Export</span>
+                {{-- <span data-href="/export" id="export" class="btn btn-success btn-sm" onclick="exportTasks(event.target);">Export</span> --}}
+                {{-- <span data-href="/export" id="export" class="btn btn-success btn-sm" >Export</span> --}}
+
+                <a class="btn btn-warning" href="{{ route('export') }}">Export User Data</a>
             </div><!-- /#right-panel -->
 
 

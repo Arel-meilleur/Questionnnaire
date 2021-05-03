@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Question;
 use Illuminate\Http\Request;
+use App\Exports\QuestionExport;
+use Maatwebsite\Excel\Facades\Excel;
 
 class QuestionController extends Controller
 {
@@ -22,6 +24,16 @@ class QuestionController extends Controller
         $data = Question::all();
         return view('admin',compact('data'));
 
+    }
+
+    public function importExportView()
+    {
+       return view('import');
+    }
+
+    public function export()
+    {
+        return Excel::download(new QuestionExport, 'question.xlsx');
     }
 
     public function exportCsv(Request $request)
