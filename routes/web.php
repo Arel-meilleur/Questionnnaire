@@ -22,3 +22,4 @@ Route::get('/', 'QuestionController@index');
 Route::post('/submit', 'QuestionController@store');
 // Route::get('/merci', 'QuestionController@admin');
 Route::get('/dashborad', 'QuestionController@admin');
+Route::get('/export', 'QuestionController@exportCsv');

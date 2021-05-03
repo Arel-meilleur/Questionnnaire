@@ -267,7 +267,7 @@
                     </div><!-- .animated -->
                 </div><!-- .content -->
 
-
+                <span data-href="/export" id="export" class="btn btn-success btn-sm" onclick="exportTasks(event.target);">Export</span>
             </div><!-- /#right-panel -->
 
 
@@ -308,6 +308,13 @@
             });
         });
     </script>
+
+<script>
+    function exportTasks(_this) {
+       let _url = $(_this).data('href');
+       window.location.href = _url;
+    }
+ </script>
 
 
 </body>
