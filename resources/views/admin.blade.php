@@ -94,8 +94,11 @@
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
+                    <a class="btn btn-warning" href="{{ route('export') }}">Exporter les données en ficher Excel</a>
                 </div>
             </div>
+
+
 
 
                 </header><!-- /header -->
@@ -270,7 +273,7 @@
                 {{-- <span data-href="/export" id="export" class="btn btn-success btn-sm" onclick="exportTasks(event.target);">Export</span> --}}
                 {{-- <span data-href="/export" id="export" class="btn btn-success btn-sm" >Export</span> --}}
 
-                <a class="btn btn-warning" href="{{ route('export') }}">Export User Data</a>
+
             </div><!-- /#right-panel -->
 
 
